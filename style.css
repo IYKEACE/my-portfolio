@@ -45,7 +45,7 @@ img {
 }
 .icons{
   gap: 0.9rem;
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
 }
 /* header */
@@ -64,12 +64,6 @@ img {
   font-weight: 1000;
   font-weight: 1500;
   font-size: 45px
-}
-.hero-desc{
-  font-size: 19px;
-  margin-top: 0.5rem;
-  text-align: left;
-  width: 70%;
 }
 .bottom-hero{
   width: 65%;
@@ -181,9 +175,6 @@ opacity: 1;
   margin-top: 4rem;
   /* background-color: #ffffff; */
 }
-.case{
-  font-size: 80px;
-}
 .experience-content {
   padding: 5rem 0;
   display: flex;
@@ -193,8 +184,9 @@ opacity: 1;
 .top-experience-content {
   text-align: center;
 }
-.top-experience-content h2 {
-  padding: 2rem 0 1rem 0;
+.top-experience-content h2{
+  font-size: 80px;
+   padding: 2rem 0 1rem 0;
 }
 .top-experience-content p {
   max-width: 600px;
@@ -337,18 +329,17 @@ opacity: 1;
 }
 .word-title{
   color: #5500d4;
-  font-weight: 600;
-  font-size: 20px;
-  margin-bottom: 0.8rem;
-  cursor: pointer;
+  font-size: 25px;
+  font-weight: 200px;
+  margin-bottom: 0.3rem;
+  text-align: left;
 }
-.word-desc{
-  font-size: 16px;
-  width: 352px;
+.word-content p{
+  font-size: 15px;
   font-weight: 400;
-  line-height: 29px;
-  color: #3f3f3f;
-  cursor: pointer;
+  line-height: 25px;
+  text-align: left;
+  color: #000000;
 }
 /* card style end */
 /* project style end */
@@ -444,3 +435,28 @@ border-radius: 4px solid #fff;
   line-height: 20px;
 }
 /* contact styles end */
+
+/* media queries */
+@media (max-width:768px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .nav-lists{
+    display: none;
+  }
+  .fa-brands{
+    display: none;
+  }
+  .hero-content{
+    flex-direction: column;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+  .bottom-hero{
+    margin-top: 5rem;
+  }
+  .tech-images{
+    flex-direction: column;
+  }
+}
