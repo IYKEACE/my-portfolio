@@ -94,198 +94,13 @@ img {
   margin-top: 6rem;
   width: 100%;
 }
-/* .html{
-  cursor: pointer;
-  
-}
-@keyframes html {
-  from{
-opacity: 0;
-  }
-  to{
-opacity: 1;
-  }
-}
-.html{
-  animation: html 4s ease-in-out 5s infinite alternate;
-}
-
-.css{
-  cursor: pointer;
-}
-@keyframes css {
-  from{
-opacity: 0;
-  }
-  to{
-opacity: 1;
-  }
-}
-.css{
-  animation: css 3s ease-in-out 4s infinite alternate;
-}
-
-.react{
-  cursor: pointer;
-}
-@keyframes react {
-  from{
-opacity: 0;
-  }
-  to{
-opacity: 1;
-  }
-}
-.react{
-  animation: react 4s ease-in-out 5s infinite alternate;
-}
-
-.javascript{
-  cursor: pointer;
-}
-@keyframes javascript {
-  from{
-opacity: 0;
-  }
-  to{
-opacity: 1;
-  }
-}
-.javascript{
-  animation: javascript 3s ease-in-out 4s infinite alternate;
-}
-.github{
-  cursor: pointer;
-}
-@keyframes github {
-  from{
-opacity: 0;
-  }
-  to{
-opacity: 1;
-  }
-}
-.github{
-  animation: github 4s ease-in-out 5s infinite alternate;
-} */
-
 /* tech style end */
-/* experience styles start */
-.experience-content {
-  padding: 5rem 0;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-.top-experience-content {
-  text-align: center;
-}
-.top-experience-content h2 {
-  font-size: 80px;
-  padding: 2rem 0 1rem 0;
-}
-.top-experience-content p {
-  max-width: 600px;
-  margin: 0 auto;
-  font-size: 14px;
-  line-height: 1.5;
-}
-.bottom-experience-content {
-  margin-top: 3rem;
-}
-.cards {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.card {
-  display: flex;
-  gap: 1.1rem;
-}
-.card:nth-child(even) {
-  flex-direction: row-reverse;
-}
-.card-desc {
-  max-width: 400px;
-  font-size: 14px;
-}
-.left-card-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.card-tag {
-  background-color: #fff6e9;
-  color: #ffa217;
-  max-width: max-content;
-  padding: 10px;
-  border-radius: 50px;
-}
-#edtech {
-  background-color: #d0e6ff;
-  color: #000aff;
-  padding: 10px;
-  border-radius: 50px;
-}
-#pharma {
-  background-color: #e0fff8;
-  color: #2ab090;
-  padding: 10px;
-  border-radius: 50px;
-}
-.card-btn {
-  max-width: max-content;
-  background-color: #ffa217;
-  padding: 0.9rem 1.5rem;
-  color: #ffffff;
-  cursor: pointer;
-  border: none;
-  transition: background-color 1s, color 1s;
-}
-.card-btn:hover {
-  background-color: rgb(212, 20, 6);
-  color: #ffffff;
-}
-.card-btn:active {
-  opacity: 0.7;
-}
-/* #fintech-btn {
-} */
-#edtech-btn {
-  background-color: #000aff;
-  transition: background-color 1s, color 1s;
-}
-#edtech-btn:hover {
-  background-color: rgb(6, 191, 212);
-  color: #ffffff;
-}
-#edtech-btn:active {
-  opacity: 0.7;
-}
-
-#pharma-btn {
-  background-color: #2ab090;
-  transition: background-color 1s, color 1s;
-}
-#pharma-btn:hover {
-  background-color: rgb(93, 101, 8);
-  color: #ffffff;
-}
-#edtech-btn:active {
-  opacity: 0.7;
-}
-
-.card-btn span {
-  margin-left: 0.4rem;
-}
-.right-card-content {
-  flex: 1;
-}
-/* experience styles end */
 
 /* project style start */
 /* card style start */
+.project-container{
+  margin-top: 3rem;
+}
 .project-content h3 {
   font-size: 80px;
   text-align: center;
@@ -345,17 +160,27 @@ opacity: 1;
   font-size: 80px;
   margin-top: 2rem;
 }
-.contact-content{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
 .number{
-  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
   font-size: 20px;
 }
+.info-contact{
+  cursor: pointer;
+}
+.info-tel{
+  cursor: pointer;
+}
+.mail{
+  cursor: pointer;
+}
 .socials{
-  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 25px;
+  cursor: pointer;
 }
 /* footer section/ */
 .footer-container {
@@ -384,13 +209,14 @@ opacity: 1;
     padding: 0 1rem;
   }
   .nav-lists {
-    display: none;
+    text-align: center;
+    align-items: center;
   }
   .fa-brands {
-    display: none;
+    /* display: none; */
   }
   .hero-content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
     align-content: center;
     align-items: center;
@@ -400,38 +226,17 @@ opacity: 1;
     margin-top: 5rem;
   }
   .tech-images {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   
-  .card {
-    flex-direction: column;
-  }
-  .card:nth-child(even) {
-    flex-direction: column;
-  }
-  .left-card-content {
-    text-align: center;
-    margin: 0 auto;
-  }
-  .card-tag,
-  .card-btn {
-    text-align: center;
-    margin: 0 auto;
-    width: 100%;
-  }
   .properties{
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+    flex-wrap: wrap;
   }
-  .right-contact-container{
+  .number{
     flex-direction: column;
     flex-wrap: wrap;
   }
-  .contact-container h2{
-    flex-direction: column;
-  }
-  .top-contact{
-    margin: 0 auto;
+  .socials{
+    flex-wrap: wrap;
   }
 }
