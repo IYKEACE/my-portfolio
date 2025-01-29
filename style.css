@@ -210,10 +210,8 @@ img {
   }
   .nav-lists {
     text-align: center;
+    display: none;
     align-items: center;
-  }
-  .fa-brands {
-    /* display: none; */
   }
   .hero-content {
     flex-direction: column-reverse;
@@ -237,6 +235,9 @@ img {
     flex-wrap: wrap;
   }
   .socials{
+    flex-wrap: wrap;
+  }
+  .contact-container{
     flex-wrap: wrap;
   }
 }
