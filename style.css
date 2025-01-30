@@ -39,14 +39,22 @@ img {
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
+  color: #fcfc;
   font-size: 19px;
   cursor: pointer;
   font-family: serif;
+}
+.fa-bars{
+  display: none;
+  color: #fcfc;
 }
 .icons {
   gap: 0.9rem;
   font-size: 25px;
   cursor: pointer;
+}
+.icons span{
+  color: #fcfc;
 }
 /* header */
 
@@ -64,6 +72,10 @@ img {
   font-weight: 1000;
   font-weight: 1500;
   font-size: 45px;
+  color: #f9004d;
+}
+p{
+  color: #fcfc;
 }
 .bottom-hero {
   width: 65%;
@@ -84,7 +96,7 @@ img {
   text-align: center;
   margin-top: 6rem;
 }
-.tech-content h3 {
+.tech-content h4 {
   font-size: 80px;
 }
 .tech-images {
@@ -93,15 +105,86 @@ img {
   justify-content: center;
   margin-top: 6rem;
   width: 100%;
+  cursor: pointer;
 }
+
 /* tech style end */
+
+/* services */
+.service{
+  width: 100%;
+  padding: 100px 0px;
+}
+ h4{
+font-size: 80px;
+/* width: 1100px; */
+margin: 30px auto;
+text-align: center;
+margin-top: 2rem;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+.card{
+  height: 365px;
+  width: 335px;
+  padding: 20px 35px;
+  background-color: #191919;
+  border-radius: 20px;
+  margin: 15px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+   transition: transform 0.3s ease;
+}
+.card:hover{
+   transform: scale(1.02, 1.09);
+}
+.card i{
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: #f9004d;
+}
+h3{
+  color: white;
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+.pra p{
+color: #fcfc;
+font-size: 16px;
+list-style: 27px;
+margin-bottom: 25px;
+}
+.card .button{
+  background-color: #f9004d;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 9px 22px;
+  border-radius: 30px;
+  transition: .4s;
+}
+.card .button:hover{
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+/* services */
 
 /* project style start */
 /* card style start */
 .project-container{
   margin-top: 3rem;
 }
-.project-content h3 {
+.project-content h4 {
   font-size: 80px;
   text-align: center;
 }
@@ -109,36 +192,41 @@ img {
   text-align: center;
   margin-bottom: 3rem;
 }
-.properties {
-  display: flex;
-  /* justify-content: space-between; */
-  /* grid-template-columns: repeat(3, 1fr); */
-  gap: 0.5rem;
+.properties { display: flex;
+justify-content: center;
+align-items: center;
+gap: 3rem;
 }
 .word {
   border-radius: 20px;
-  background: #2ab090;
-  padding: 1rem;
+  background-color: #191919;
+  padding: 20px 35px;
   margin: 0 auto;
-  width: 65%;
   flex-wrap: wrap;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  height: 670px;
+  width: 335px;
+  padding: 20px 35px;
+  border-radius: 25px;
   transition: transform 0.3s ease;
   cursor: pointer;
 }
 .word-content {
   padding: 20px;
 }
-.word img {
-  width: 80%;
+.home{
+  width: 103%;
+}
+.login{
+  width: 85%;
+}
+.scooter{
+  width: 85%;
 }
 .word:hover {
   transform: scale(1.02, 1.09);
 }
 .word-title {
-  color: #5500d4;
+  color: #fcfc;
   font-size: 20px;
   font-weight: 200px;
   margin-bottom: 0.3rem;
@@ -147,10 +235,11 @@ img {
 }
 .word-content p {
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 60px;
   line-height: 25px;
   text-align: left;
-  color: #000000;
+  color: #f9004d;
+  list-style: 27px;
 }
 /* card style end */
 /* project style end */
@@ -182,13 +271,20 @@ img {
   font-size: 25px;
   cursor: pointer;
 }
+.socials span{
+  font-size: 50px;
+  display: block;
+  text-align: center;
+  margin: 25px 0px;
+  color: #fcfc;
+}
 /* footer section/ */
 .footer-container {
   background-color: #3f3f3f;
   text-align: center;
   margin-top: 2rem;
   border: none;
-  color: #fff;
+  color: #fcfc;
   font-family: "lato";
   border-radius: 30px;
   border-radius: 4px solid #fff;
@@ -213,6 +309,11 @@ img {
     display: none;
     align-items: center;
   }
+  
+  .fa-bars{
+    display: block;
+    cursor: pointer;
+  }
   .hero-content {
     flex-direction: column-reverse;
     text-align: center;
@@ -226,9 +327,15 @@ img {
   .tech-images {
     flex-wrap: wrap;
   }
-  
+  .box{
+    flex-wrap: wrap;
+  }
+  .service-content {
+    flex-wrap: wrap;
+  }
   .properties{
     flex-wrap: wrap;
+    margin: 0 auto;
   }
   .number{
     flex-direction: column;
@@ -238,6 +345,13 @@ img {
     flex-wrap: wrap;
   }
   .contact-container{
+    flex-wrap: wrap;
+  }
+  .contact-container p{ 
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  .footer-title{
     flex-wrap: wrap;
   }
 }
